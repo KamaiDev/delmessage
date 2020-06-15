@@ -1,30 +1,22 @@
-# hello-express
+# Deletar Mensagens Privado/Canais Discord
 
-A server that serves a webpage, its resources, and some data
+### Informações
 
+> 🎁 » Developer • NotDev
+> 
+> 📝 » Perguntas • Issues
+> 
+> 💻 » Plataforma • Glitch | VSCode
 
-## Your Project
+### Introdução
+> Este repositório foi criado para fins de estudo sobre a lib discord.js e não com o intuito de criar selfbots. Lembrando que o uso constante pode acarretar em bloqueio ou exclusão da sua conta por quebra das ToS do Discord.
 
-On the front-end,
+### Modo de Uso
+> 1› Configure o prefixo desejado na pasta `/events/message.js` e a sua token na `.env`
+> 
+> 2› Depois disso, basta ir ao canal/DM desejada e usar o comando `${prefixo}delmsg` e seja feliz :)
 
-- Edit `views/index.html` to change the content of the webpage
-- `public/client.js` is the javacript that runs when you load the webpage
-- `public/style.css` is the styles for `views/index.html`
-- Drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy.
-
-
-## Made by [Glitch](https://glitch.com/)
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-( ᵔ ᴥ ᵔ )
+### Importante
+> Evite fazer alterações no código para evitar erros e problemas. Qualquer erro ocorrido basta mandar nas issues da GitHub que eu fixarei ou te ajudarei.
+> 
+> O script também possui um log de todas as mensagens que serão apagadas no console, assim evita de perder algo importante, tipo aquele link lendário que você não quer perder.

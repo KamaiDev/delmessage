@@ -1,34 +1,19 @@
-const _0x4746 = ["exports", "size", "delete", "channels", "log", "run", "categoty", "channel", "author", "then", "catch", "get", "content", "name", "delmsg", "user", "help"];
-(function (_0x1183e2, _0x47461e) {
-    const _0x1be96f = function (_0x1564d4) {
-        while (--_0x1564d4) {
-            _0x1183e2["push"](_0x1183e2["shift"]());
-        }
-    };
-    _0x1be96f(++_0x47461e);
-})(_0x4746, 0xad);
-const _0x1be9 = function (_0x1183e2, _0x47461e) {
-    _0x1183e2 = _0x1183e2 - 0x0;
-    let _0x1be96f = _0x4746[_0x1183e2];
-    return _0x1be96f;
-};
-module[_0x1be9("0xe")][_0x1be9("0x2")] = async (_0x2db689, _0x141862, _0x3207ae) => {
-    const _0x4d61c7 = _0x2db689[_0x1be9("0x0")][_0x1be9("0x8")](_0x141862[_0x1be9("0x4")]["id"]);
-    _0x4d61c7["fetchMessages"]()
-        [_0x1be9("0x6")]((_0x323bcc) => {
-            if (_0x323bcc[_0x1be9("0xf")] <= 0x0) return;
-            _0x323bcc["filter"]((_0x4d659b) => _0x4d659b[_0x1be9("0x5")]["id"] == _0x2db689[_0x1be9("0xc")]["id"])["forEach"](async (_0x108d73) => {
-                await console[_0x1be9("0x1")](_0x108d73[_0x1be9("0x9")]);
-                await _0x108d73[_0x1be9("0x10")]()[_0x1be9("0x7")]((_0x443977) => {
-                    console[_0x1be9("0x1")](_0x443977);
-                });
-            });
-        })
-        ["catch"]((_0x34981b) => {
-            console[_0x1be9("0x1")](_0x34981b);
-        });
-};
-const _0x44e846 = {};
-_0x44e846[_0x1be9("0xa")] = _0x1be9("0xb");
-_0x44e846[_0x1be9("0x3")] = _0x1be9("0xb");
-module["exports"][_0x1be9("0xd")] = _0x44e846;
+module.exports.run = async (bot, message, args) => {
+	
+	const channel = bot.channels.get(message.channel.id)
+
+  channel.fetchMessages().then(msgs => {
+  if (msgs.size <= 0) return
+  msgs.filter(u => u.author.id == bot.user.id).forEach(async msg => {
+
+  await console.log(msg.content)
+
+   await msg.delete().catch(err => { console.log(err) })
+   })
+  }).catch(err => { console.log(err) })
+}
+
+module.exports.help = {
+  name: "delmsg",
+  categoty: "delmsg"
+}

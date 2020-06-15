@@ -3,7 +3,7 @@ module.exports = (bot, message) => {
 if (message.author.bot) return;
 if (message.author.id !== bot.user.id) return;
 
-let prefix = '.';
+let prefix = 'PREFIXO AQUI';
 if (!message.content.startsWith(prefix)) return;
 
     if (message.content.indexOf(prefix) !== 0) return;

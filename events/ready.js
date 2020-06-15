@@ -5,5 +5,5 @@ module.exports = async bot => {                                                 
   console.log(bot.user.id);
   console.log("💌 Owner Log 💌");
   
-  console.log(`Créditos ${bot.users.get(`643499869612277782`).tag}`)
+  console.log(`Créditos NotDev`)
 };
