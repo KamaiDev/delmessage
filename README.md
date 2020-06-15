@@ -17,4 +17,6 @@
 > 2› Depois disso, basta ir ao canal/DM desejada e usar o comando `${prefixo}delmsg` e seja feliz :)
 
 ### Importante
-> Evite fazer alterações no código para evitar erros e problemas. Qualquer erro ocorrido basta mandar nas issues fa GitHub que eu corrigirei ou te ajudarei.
+> Evite fazer alterações no código para evitar erros e problemas. Qualquer erro ocorrido basta mandar nas issues da GitHub que eu fixarei ou te ajudarei.
+> 
+> O script também possui um log de todas as mensagens que serão apagadas no console, assim evita de perder algo importante, tipo aquele link lendário que você não quer perder.
