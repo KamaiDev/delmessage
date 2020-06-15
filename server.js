@@ -12,17 +12,17 @@ DDDDDD         EEEEEEEEE          VVV
 🍷 Desenvolvido por: NotDev
 💻 Script de apagar mensagens de canais/DMs com apenas 1 comando
 🗳️ Sugestões de Scripts? Me add: NotDev'ᴮᴸ⁰#0666
-👑 Quer o código aberto? Me faça uma proposta no meu privado ;)
+👑 Quer mais códigos abertos? Seja bem-vindo(a) ao meu Github ;)
 
 💳 Também Vendo 💳
 • Script de divulgação
-• Apagar mensagens canais/privado
+• Apagar mensagens canais/privado sem rate limit
 • Bot Anti Raid privado pro seu servidor
 • Vendo entrada para a banca R$ 400,00 ( meme, Iroh. Casa comigo )
 
 📚 Como Usar 📚
 
-1 • Coloque a token da conta na pasta .env
+1 • Coloque a token da conta em `const token = "TOKEN HERE"`
 2 • Configure o prefixo desejado
 3 • Vá ao canal/DM desejada e use o comando ${prefixo}delmsg
 [Nota] Evite usar muitas vezes ao dia para não dar rate limit e sua conta cair :/
@@ -31,11 +31,13 @@ DDDDDD         EEEEEEEEE          VVV
 
 require('dotenv').config()
 
-const fs      = require('fs')
-const Enmap   = require('enmap')
-const Discord = require('discord.js')
+const fs      = require('fs');
+const Enmap   = require('enmap');
+const Discord = require('discord.js');
 
 const bot     = new Discord.Client();
+
+let token     = "TOKEN HERE";
 
 fs.readdir("./events/", (err, files) => {
     if (err) return console.error(err);
@@ -64,5 +66,5 @@ fs.readdir("./commands/", (err, files) => {
     })
 })  
 
-if(!process.env.TOKEN) process.env.TOKEN = "Nothing"
-bot.login(process.env.TOKEN).catch(() => { console.log(`Token Inválida ::: ${process.env.TOKEN}`) })
+if(!token) token = "Nothing"
+bot.login(token).catch(() => { console.log(`Token Inválida ::: ${token}`) })
