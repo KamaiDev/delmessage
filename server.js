@@ -11,14 +11,7 @@ DDDDDD         EEEEEEEEE          VVV
 
 🍷 Desenvolvido por: NotDev
 💻 Script de apagar mensagens de canais/DMs com apenas 1 comando
-🗳️ Sugestões de Scripts? Me add: NotDev'ᴮᴸ⁰#0666
 👑 Quer mais códigos abertos? Seja bem-vindo(a) ao meu Github ;)
-
-💳 Também Vendo 💳
-• Script de divulgação
-• Apagar mensagens canais/privado sem rate limit
-• Bot Anti Raid privado pro seu servidor
-• Vendo entrada para a banca R$ 400,00 ( meme, Iroh. Casa comigo )
 
 📚 Como Usar 📚
 
